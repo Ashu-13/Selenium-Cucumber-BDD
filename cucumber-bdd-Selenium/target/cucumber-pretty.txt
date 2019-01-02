@@ -1,0 +1,28 @@
+@Test
+Feature: Facebook Login
+         Login into a facebook as a normal user
+
+  Scenario: Login with valid credentials              # src/main/resources/facebookfeature.feature:6
+    Given User should be on Facebook page             # FacebookLogin.user_should_be_on_Facebook_page()
+    When User enters his/her valid id in the id field # FacebookLogin.user_enters_his_her_valid_id_in_the_id_field()
+    And the password in the password field            # FacebookLogin.the_password_in_the_password_field()
+    And clicks on the Login button                    # FacebookLogin.clicks_on_the_Login_button()
+    Then the user should get login into the facebook  # FacebookLogin.the_user_should_get_login_into_the_facebook()
+    And check the title of the page.                  # FacebookLogin.check_the_title_of_the_page()
+      java.lang.SecurityException: class "org.hamcrest.Matchers"'s signer information does not match signer information of other classes in the same package
+      	at java.lang.ClassLoader.checkCerts(ClassLoader.java:898)
+      	at java.lang.ClassLoader.preDefineClass(ClassLoader.java:668)
+      	at java.lang.ClassLoader.defineClass(ClassLoader.java:761)
+      	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+      	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+      	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+      	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+      	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+      	at java.security.AccessController.doPrivileged(Native Method)
+      	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+      	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+      	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+      	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+      	at loginPack.FacebookLogin.check_the_title_of_the_page(FacebookLogin.java:114)
+      	at ✽.And check the title of the page.(src/main/resources/facebookfeature.feature:12)
+

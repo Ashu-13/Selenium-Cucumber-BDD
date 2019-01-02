@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.870496">
+<testcase classname="Facebook Login" name="Login with valid credentials" time="31.870496">
+<failure message="java.lang.SecurityException: class &quot;org.hamcrest.Matchers&quot;'s signer information does not match signer information of other classes in the same package&#13;&#10;&#9;at java.lang.ClassLoader.checkCerts(ClassLoader.java:898)&#13;&#10;&#9;at java.lang.ClassLoader.preDefineClass(ClassLoader.java:668)&#13;&#10;&#9;at java.lang.ClassLoader.defineClass(ClassLoader.java:761)&#13;&#10;&#9;at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)&#13;&#10;&#9;at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)&#13;&#10;&#9;at java.net.URLClassLoader.access$100(URLClassLoader.java:74)&#13;&#10;&#9;at java.net.URLClassLoader$1.run(URLClassLoader.java:369)&#13;&#10;&#9;at java.net.URLClassLoader$1.run(URLClassLoader.java:363)&#13;&#10;&#9;at java.security.AccessController.doPrivileged(Native Method)&#13;&#10;&#9;at java.net.URLClassLoader.findClass(URLClassLoader.java:362)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(ClassLoader.java:424)&#13;&#10;&#9;at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(ClassLoader.java:357)&#13;&#10;&#9;at loginPack.FacebookLogin.check_the_title_of_the_page(FacebookLogin.java:114)&#13;&#10;&#9;at ✽.And check the title of the page.(src/main/resources/facebookfeature.feature:12)&#13;&#10;"><![CDATA[Given User should be on Facebook page.......................................passed
+When User enters his/her valid id in the id field...........................passed
+And the password in the password field......................................passed
+And clicks on the Login button..............................................passed
+Then the user should get login into the facebook............................passed
+And check the title of the page.............................................failed
+
+StackTrace:
+java.lang.SecurityException: class "org.hamcrest.Matchers"'s signer information does not match signer information of other classes in the same package
+	at java.lang.ClassLoader.checkCerts(ClassLoader.java:898)
+	at java.lang.ClassLoader.preDefineClass(ClassLoader.java:668)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:761)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at loginPack.FacebookLogin.check_the_title_of_the_page(FacebookLogin.java:114)
+	at ✽.And check the title of the page.(src/main/resources/facebookfeature.feature:12)
+]]></failure>
+</testcase>
+</testsuite>

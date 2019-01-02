@@ -1,0 +1,92 @@
+[
+  {
+    "source": "^clicks on the Login button$",
+    "steps": [
+      {
+        "name": "clicks on the Login button",
+        "aggregatedDurations": {
+          "average": 2.299747514,
+          "median": 2.299747514
+        },
+        "durations": [
+          {
+            "duration": 2.299747514,
+            "location": "src/main/resources/facebookfeature.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the password in the password field$",
+    "steps": [
+      {
+        "name": "the password in the password field",
+        "aggregatedDurations": {
+          "average": 0.133336689,
+          "median": 0.133336689
+        },
+        "durations": [
+          {
+            "duration": 0.133336689,
+            "location": "src/main/resources/facebookfeature.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User enters his/her valid id in the id field$",
+    "steps": [
+      {
+        "name": "User enters his/her valid id in the id field",
+        "aggregatedDurations": {
+          "average": 3.220741964,
+          "median": 3.220741964
+        },
+        "durations": [
+          {
+            "duration": 3.220741964,
+            "location": "src/main/resources/facebookfeature.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User should be on Facebook page$",
+    "steps": [
+      {
+        "name": "User should be on Facebook page",
+        "aggregatedDurations": {
+          "average": 26.183028526,
+          "median": 26.183028526
+        },
+        "durations": [
+          {
+            "duration": 26.183028526,
+            "location": "src/main/resources/facebookfeature.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the user should get login into the facebook$",
+    "steps": [
+      {
+        "name": "the user should get login into the facebook",
+        "aggregatedDurations": {
+          "average": 0.011788969,
+          "median": 0.011788969
+        },
+        "durations": [
+          {
+            "duration": 0.011788969,
+            "location": "src/main/resources/facebookfeature.feature:11"
+          }
+        ]
+      }
+    ]
+  }
+]

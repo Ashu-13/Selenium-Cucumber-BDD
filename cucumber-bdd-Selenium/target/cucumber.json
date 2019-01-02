@@ -1,0 +1,101 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Login with valid credentials",
+        "description": "",
+        "id": "facebook-login;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26183028526,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be on Facebook page",
+            "match": {
+              "location": "FacebookLogin.user_should_be_on_Facebook_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3220741964,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters his/her valid id in the id field",
+            "match": {
+              "location": "FacebookLogin.user_enters_his_her_valid_id_in_the_id_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133336689,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the password in the password field",
+            "match": {
+              "location": "FacebookLogin.the_password_in_the_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2299747514,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks on the Login button",
+            "match": {
+              "location": "FacebookLogin.clicks_on_the_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11788969,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user should get login into the facebook",
+            "match": {
+              "location": "FacebookLogin.the_user_should_get_login_into_the_facebook()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21852172,
+              "error_message": "java.lang.SecurityException: class \"org.hamcrest.Matchers\"\u0027s signer information does not match signer information of other classes in the same package\r\n\tat java.lang.ClassLoader.checkCerts(ClassLoader.java:898)\r\n\tat java.lang.ClassLoader.preDefineClass(ClassLoader.java:668)\r\n\tat java.lang.ClassLoader.defineClass(ClassLoader.java:761)\r\n\tat java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)\r\n\tat java.net.URLClassLoader.defineClass(URLClassLoader.java:468)\r\n\tat java.net.URLClassLoader.access$100(URLClassLoader.java:74)\r\n\tat java.net.URLClassLoader$1.run(URLClassLoader.java:369)\r\n\tat java.net.URLClassLoader$1.run(URLClassLoader.java:363)\r\n\tat java.security.AccessController.doPrivileged(Native Method)\r\n\tat java.net.URLClassLoader.findClass(URLClassLoader.java:362)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:424)\r\n\tat sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)\r\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:357)\r\n\tat loginPack.FacebookLogin.check_the_title_of_the_page(FacebookLogin.java:114)\r\n\tat ✽.And check the title of the page.(src/main/resources/facebookfeature.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "check the title of the page.",
+            "match": {
+              "location": "FacebookLogin.check_the_title_of_the_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Login",
+    "description": "       Login into a facebook as a normal user",
+    "id": "facebook-login",
+    "keyword": "Feature",
+    "uri": "src/main/resources/facebookfeature.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Test"
+      }
+    ]
+  }
+]
